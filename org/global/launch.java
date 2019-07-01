@@ -42,10 +42,13 @@ WebElement comments=driver.findElement(By.xpath("//textarea[@name='comments']"))
 comments.sendKeys("intrestes in java j2ee course and like to know the details reachout me @ 9840660161");
 WebElement submitbtn=driver.findElement(By.xpath("//button[@id='submit']"));
 submitbtn.click();
+
 String url=driver.getCurrentUrl();
 System.out.println(url);
 String ti=driver.getTitle();
 System.out.println(ti);
+//added code for quit browser
+driver.quit();
 }
 }
 
